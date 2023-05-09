@@ -7,6 +7,7 @@ const http = require("http");
 const BodyParser = require("body-parser");
 const addNotificationReciever = require("./router/addNotificatioReciver"); 
 const register = require("./router/register"); 
+const sandNotiUser = require("./router/sandNotiUser"); 
 const sendMail = require("./router/sendMail"); 
 const PORT = process.env.PORT || 5000;
 app.use(cors());
@@ -14,6 +15,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(require("./router/auth"));
 app.use("/addNotificationReciever", addNotificationReciever);
+app.use("/sandNotiUser", sandNotiUser);
 app.use("/register", register);
 app.use("/sendMail", sendMail);
 
