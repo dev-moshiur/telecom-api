@@ -5,6 +5,7 @@
 const express = require('express');
 const router = express.Router();
 const sendNoti = require("../expo-push-notification");
+const NotificationReciever = require("../models/NotificationReciever");
 router.post('/',async (req, res) => {
 
 try {

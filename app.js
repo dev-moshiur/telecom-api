@@ -9,7 +9,7 @@ const addNotificationReciever = require("./router/addNotificatioReciver");
 const register = require("./router/register"); 
 const sandNotiUser = require("./router/sandNotiUser"); 
 const sendMail = require("./router/sendMail"); 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5009;
 app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
