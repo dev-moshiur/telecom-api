@@ -34,6 +34,7 @@ const amninTokens = await NotificationReciever.find({ role: "user" });
 
 res.status(200).json('Notification sent successfully');
 } catch (error) {
+  console.log(error)
 res.status(500).json(error);
 }
 });
